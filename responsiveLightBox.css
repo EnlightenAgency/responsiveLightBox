@@ -1,0 +1,40 @@
+
+.LBContainer { // this container holds the lightbox image 
+  width: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  height: auto;
+  background: #000;
+  padding: 40px;
+  visibility: hidden;
+}
+
+.overlay {
+  background: url("/Style%20Library/img/bgBlackTransp.png");
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 9999;
+}
+
+.closeLightboxLink {
+  position: absolute;
+  top: 11px; 
+  left: 11px;
+  z-index: 99999;
+  cursor: pointer;
+  width: 70px; // this width is needed in IE7
+}
+
+.closeLightboxLink span { // close button text
+  font-size: 12px;
+  margin: 2px 0 0 10px;
+  float: right;
+  font-family: 'Avenir LT W01 85 Heavy',Arial,Helvetica,sans-serif;
+  color: #555151;
+}
